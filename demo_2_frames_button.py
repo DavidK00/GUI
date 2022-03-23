@@ -1,11 +1,11 @@
 import tkinter
 import tkinter.messagebox
 
-class KiloConverterGUI:
+class Pizza:
     def __init__(self):
-        self.main_window = tkinter.Tk() #creates our dialogue box
+        self.main_window = tkinter.Tk() 
 
-        self.top_frame = tkinter.Frame(self.main_window) #frame method of the tkinter module
+        self.top_frame = tkinter.Frame(self.main_window) 
         self.bottom_frame = tkinter.Frame(self.main_window)
 
         self.prompt_label = tkinter.Label(self.top_frame, text = 'Enter a distance in Kilometers: ') 
@@ -15,7 +15,7 @@ class KiloConverterGUI:
         self.kilo_entry.pack(side = 'left') 
         
       
-        #create button in main window, buttons says click me, button does what you tell it to do
+        
         self.calc_button = tkinter.Button(self.main_window,
                                         text = 'Convert', 
                                         command = self.convert)
@@ -44,5 +44,5 @@ class KiloConverterGUI:
                                     str(kilo) + ' Kilometers is equal to '+ 
                                     str(miles) + ' miles.')
 
-my_gui = KiloConverterGUI()
+my_gui = Pizza()
 
